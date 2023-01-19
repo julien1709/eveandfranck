@@ -1,0 +1,158 @@
+$base-color: #F44066;
+
+.peinture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+
+  @media screen and (orientation: portrait) {
+    object-fit: contain;
+  }
+}
+
+.timeline {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.item {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-item {
+  width: 26%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (orientation: portrait) {
+    width: 35%;
+  }
+
+  .dress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-family: 'Mustardo';
+    text-align: center;
+    text-align-last: end;
+    color: black;
+    line-height: 110%;
+    font-size: 3.5vmax;
+    text-transform: capitalize;
+
+
+    @media screen and (orientation: portrait) {
+      line-height: 115%;
+    }
+  }
+}
+
+.timeline-bullet::before {
+  content: '';
+  border-bottom: 2px dashed black;
+  width: 6vw;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  left: -7.5vw;
+}
+.bullet-horizontal::after {
+  content: '';
+  border-left: 2px dashed black;
+  margin-top: 0.8rem;
+  margin-left: 0.35rem;
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.timeline-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 2vw;
+}
+
+.timeline-event-localisation {
+  width: 25%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 1vw;
+  font-size: 1.2vmax;
+
+  @media screen and (orientation: portrait) {
+    width: 35%;
+    height: 40%;
+    font-size: 2vmax;
+  }
+}
+
+.localisation-first {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.localisation-second {
+  color: black;
+}
+
+.basketsMessage {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.hour {
+  text-align: center;
+  font-size: 2.6vmax;
+  font-weight: 900;
+  color: black;
+}
+
+.event {
+  width: 70%;
+  text-align: center;
+  font-size: 1.8vmax;
+  font-weight: 400;
+  color: black;
+}
+
+.iconAndPlace {
+  display: flex;
+  cursor: pointer;
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vw;
+    color: $base-color;
+  }
+}
+

@@ -1,0 +1,69 @@
+$base-color: #F44066;
+
+.mainContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .firstContainer {
+    width: 100vw;
+    height: 200vh;
+    min-height: 200vh;
+  }
+
+  .secondContainer {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (orientation: portrait) {
+      height: 220vh;
+      min-height: 220vh;
+    }
+  }
+
+  .secondContainer {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .thirdContainer {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .fourthContainer {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.mainContainer::-webkit-scrollbar {
+  width: 0.5vw;
+  border-radius: 15px;
+  background: $base-color;
+}
+
+.mainContainer::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 15px;
+}

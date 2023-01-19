@@ -1,0 +1,50 @@
+.message {
+  width: 95%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 2vmax;
+
+  @media screen and (orientation: portrait) {
+    font-size: 2vmax;
+  }
+}
+
+.contact {
+  font-size: 2.3vmax !important;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.contactField {
+  width: 65%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (orientation: portrait) {
+    margin-top: 5vh;
+    height: 20%;
+    flex-direction: column;
+  }
+
+  p, a {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    @media screen and (orientation: portrait) {
+      font-size: 2vmax;
+    }
+  }
+}

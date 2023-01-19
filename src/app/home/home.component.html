@@ -1,0 +1,42 @@
+<div class="first">
+  <div class="navbar">
+    <menu>
+      <li (click)="redirectTo('homeComponent')">Accueil</li>
+      <li (click)="redirectTo('planningComponent')">Programme</li>
+      <li (click)="redirectTo('galleryComponent')">Galerie</li>
+      <li (click)="redirectTo('contactComponent')">Contact</li>
+    </menu>
+  </div>
+  <div class="backgroundBlack">
+    <div class="names">Eve & Franck</div>
+    <div class="date">24/06/23</div>
+    <img class="letslovetogether" src="../assets/letslovetogether.png">
+    <div class="countdown">
+      <div class="countdownItem">
+        <div>{{dayCountdown}}</div>
+        <div>days</div>
+      </div>
+      <div class="countdownItem">
+        <div>{{hourCountdown}}</div>
+        <div>hours</div>
+      </div>
+      <div class="countdownItem">
+        <div>{{minCountdown}}</div>
+        <div>minutes</div>
+      </div>
+      <div class="countdownItem">
+        <div>{{secCountdown}}</div>
+        <div>secs</div>
+      </div>
+    </div>
+  </div>
+  <div class="image">
+    <img [src]="isMobile ? '../assets/baskets-mobile.png' : '../assets/baskets.png'">
+  </div>
+</div>
+<div class="second">
+  <img class="peinture" src="../assets/eclatdepeinture.png">
+  <h1>Oui !</h1>
+  <h2>Nous allons nous marier !</h2>
+  <img class="logo" src="../assets/logo.png">
+</div>
